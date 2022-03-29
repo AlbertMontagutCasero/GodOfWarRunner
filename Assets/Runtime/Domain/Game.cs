@@ -6,7 +6,7 @@
 
         public bool GameIsStarted()
         {
-            return false;
+            return true;
         }
 
         public void StartNewGame()
