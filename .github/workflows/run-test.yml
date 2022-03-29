@@ -24,11 +24,12 @@ jobs:
           - ./
         unityVersion:
           - 2020.3.24f1
-        targetPlatform:
-          - Android
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Unity - Test runner
         uses: game-ci/unity-test-runner@v2.0.0-alpha-7
+        with:
+          projectPath: ${{ matrix.projectPath }}
+          unityVersion: ${{ matrix.unityVersion }}
     
